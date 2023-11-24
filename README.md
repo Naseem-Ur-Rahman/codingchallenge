@@ -16,5 +16,5 @@
 6. You will see the output in the localhost.
 
 7. The Project build is already uploaded on netlify with the below url check
-
+  https://deltacroncodingchallenge.netlify.app/
 Note: If there is any problem or need help i am ready to help you.
