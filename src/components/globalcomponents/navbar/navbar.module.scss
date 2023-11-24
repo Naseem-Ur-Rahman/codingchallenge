@@ -1,0 +1,39 @@
+// src/Navbar.module.scss
+@import "../../../index.css";
+
+.navbar {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: var(--logo-color);
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+  .navlinkscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    .navlinks {
+      text-decoration: none;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      margin-left: 35px;
+      color: var(--font-color);
+    }
+  }
+  .menuicon {
+    color: var(--font-color);
+  }
+}

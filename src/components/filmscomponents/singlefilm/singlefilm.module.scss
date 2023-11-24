@@ -1,0 +1,70 @@
+@import "../../../index.css";
+.maincontainer {
+  width: 100%;
+  padding: 50px;
+  @media screen and (max-width: 912px) {
+    padding: 30px;
+  }
+  @media screen and (max-width: 540px) {
+    padding: 15px;
+  }
+  .mainHeading {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    .topcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Poppins";
+        color: var(--font-color);
+      }
+      .subinfo {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Poppins";
+        color: var(--font-color);
+      }
+    }
+    .bottomContainer {
+      margin-top: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: "Poppins";
+      color: var(--font-color);
+      .openCrawl {
+        margin-bottom: 10px;
+      }
+      .characters {
+        .links {
+          display: flex;
+          margin-right: 8px;
+          color: var(--font-color);
+          font-family: "Poppins";
+          font-size: 12px;
+          font-weight: 300;
+          margin-top: 5px;
+          cursor: pointer;
+        }
+        .movielink {
+          margin-left: 20px;
+          font-size: 12px;
+          font-family: "Poppins";
+          font-weight: 300;
+          color: var(--link-color);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

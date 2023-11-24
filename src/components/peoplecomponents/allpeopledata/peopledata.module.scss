@@ -1,0 +1,79 @@
+// UserCard.module.scss
+@import "../../../index.css";
+.maincontainer {
+  padding: 50px;
+  @media screen and (max-width: 912px) {
+    padding: 30px;
+  }
+  @media screen and (max-width: 540px) {
+    padding: 15px;
+  }
+  .mainHeading {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .cardContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .userCard {
+    width: calc(25% - 15px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-color);
+
+    @media screen and (max-width: 1200px) {
+      width: calc(32% - 0px);
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: calc(31% - 0px);
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: calc(32% - 5px);
+    }
+
+    @media screen and (max-width: 768px) {
+      width: calc(31% - 5px);
+    }
+    @media screen and (max-width: 650px) {
+      width: calc(48% - 1px);
+    }
+    @media screen and (max-width: 500px) {
+      width: calc(100% - 0px);
+    }
+
+    .username {
+      padding-left: 15px;
+      padding-top: 10px;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--font-color);
+    }
+
+    .subinfoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 10px;
+      color: var(--font-color);
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 300;
+      .allInfoButton {
+        cursor: pointer;
+        font-family: 13px;
+        font-weight: 400;
+        color: #d6d64a;
+      }
+    }
+  }
+}

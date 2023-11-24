@@ -1,0 +1,89 @@
+@import "../../../index.css";
+
+.maincontainer {
+  width: 100%;
+  padding: 50px;
+  @media screen and (max-width: 912px) {
+    padding: 30px;
+  }
+  @media screen and (max-width: 540px) {
+    padding: 15px;
+  }
+  .mainHeading {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    .name {
+      font-size: 22px;
+      font-weight: 500;
+      font-family: "Poppins";
+      color: var(--font-color);
+    }
+    .generalInfo {
+      font-size: 14px;
+      font-weight: 200;
+      letter-spacing: 0.8px;
+      font-family: "Poppins";
+      color: var(--font-color);
+      margin-top: 15px;
+    }
+    .subInfoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+      color: var(--font-color);
+      .subInfo {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        @media screen and (max-width: 540px) {
+          flex-direction: column;
+          align-items: start;
+        }
+        h4 {
+          font-family: "Poppins";
+          font-size: 15px;
+          margin-right: 15px;
+          font-weight: 400;
+          @media screen and (max-width: 540px) {
+            font-size: 14px;
+          }
+        }
+        p {
+          font-family: "Poppins";
+          font-size: 15px;
+          font-weight: 400;
+          @media screen and (max-width: 540px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .movieLink {
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Poppins";
+        font-weight: 200;
+        color: var(--font-color);
+        cursor: pointer;
+      }
+      .homeworld {
+        p {
+          text-decoration: none;
+          font-size: 12px;
+          font-family: "Poppins";
+          font-weight: 300;
+          color: var(--link-color);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

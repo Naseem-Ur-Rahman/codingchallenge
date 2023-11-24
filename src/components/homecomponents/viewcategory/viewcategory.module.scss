@@ -1,0 +1,51 @@
+// src/components/ViewCategory.module.scss
+@import "../../../index.css";
+
+.maincontainer {
+  margin: 50px;
+  @media screen and (max-width: 550px) {
+    margin: 30px;
+  }
+  .heading {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .categoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    @media screen and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 340px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 5px 10px;
+    font-family: "Poppins";
+    color: var(--logo-color);
+    margin: 0;
+  }
+}
